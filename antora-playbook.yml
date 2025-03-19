@@ -8,6 +8,21 @@ content:
       branches: main   # Adjust branch name if needed
       start_path: docs  # Change if your AsciiDoc files are in a different folderAdjust this based on your folder structure
 
+
+asciidoc:
+  attributes:
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    page-pagination: '@'
+
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+      index_latest_only: true
+      snippet_length: 250
+    - antora-swagger-ui-extension
+
 ui:
   bundle:
     url: ./ui-bundle.zip
@@ -18,6 +33,6 @@ runtime:
 
 
 output:
-  dir: ./public
+  dir: /var/www/html
 
 
