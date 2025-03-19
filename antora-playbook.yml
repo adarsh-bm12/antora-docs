@@ -16,12 +16,6 @@ asciidoc:
     idseparator: '-'
     page-pagination: '@'
 
-antora:
-  extensions:
-    - require: '@antora/lunr-extension'
-      index_latest_only: true
-      snippet_length: 250
-    - antora-swagger-ui-extension
 
 ui:
   bundle:
